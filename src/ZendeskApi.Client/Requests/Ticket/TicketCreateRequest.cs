@@ -94,6 +94,11 @@ namespace ZendeskApi.Client.Requests
         /// </summary>
         [JsonProperty("organization_id")]
         public long? OrganisationId { get; set; }
+        /// <summary>
+        /// Email Address through which the ticket was received. (Will be used when sending notifications to the customer.)
+        /// </summary>
+        [JsonProperty("recipient")]
+        public string Recipient { get; set; }
 
     }
 }
